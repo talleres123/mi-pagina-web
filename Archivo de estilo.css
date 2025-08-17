@@ -118,3 +118,31 @@ img:hover {
     transform: scale(1.05); /* zoom sutil */
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15); /* sombra elegante */
 }
+/* Para pantallas menores a 768px (celulares) */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* si querés esquinas redondeadas */
+  }
+}
