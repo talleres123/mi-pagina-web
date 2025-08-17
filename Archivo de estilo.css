@@ -1,0 +1,120 @@
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== ESTILOS GENERALES ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== ENCABEZADO + MENÚ ===== */
+header {
+    background: #fff;
+    padding: 1.2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #111;
+    border-bottom: 2px solid #111;
+    padding-bottom: 2px;
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-texto h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.hero-texto p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem; /* aquí estaba el error */
+}
+
+/* Contenedor general de todo el contenido */
+
+/* Contenedor de lectura */
+.contenedor {
+    max-width: 650px;     /* más angosto para mejorar la lectura */
+    margin: 0 auto;       /* centra el bloque */
+    padding: 2rem;        /* aire interno */
+    line-height: 1.8;     /* más separación entre renglones */
+    font-size: 1.1rem;    /* un poquito más grande la letra */
+}
+
+/* Títulos */
+.contenedor h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #000000; /* o el color que uses */
+}
+
+/* Párrafos */
+.contenedor p {
+    margin-bottom: 1.2rem; /* separación entre párrafos */
+    text-align: left;      /* más natural para web */
+    color: #000000;           /* gris clarito en vez de blanco puro */
+}
+
+/* Estilo general para todas las imágenes */
+img {
+    border-radius: 10px; /* esquinas suavemente redondeadas */
+    transition: all 0.4s ease; /* animación fluida */
+    max-width: 100%; /* que no se desborde del contenedor */
+    height: auto;
+}
+
+/* Efecto al pasar el mouse */
+img:hover {
+    border-radius: 20px; /* redondea más las esquinas */
+    transform: scale(1.05); /* zoom sutil */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15); /* sombra elegante */
+}
