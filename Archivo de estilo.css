@@ -76,73 +76,89 @@ nav ul li a:hover {
 .hero-texto p {
     font-size: 1.1rem;
     color: #555;
-    margin-bottom: 2rem; /* aquí estaba el error */
+    margin-bottom: 2rem;
+    /* aquí estaba el error */
+}
+
+.hero-texto>.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /* Contenedor general de todo el contenido */
 
 /* Contenedor de lectura */
 .contenedor {
-    max-width: 650px;     /* más angosto para mejorar la lectura */
-    margin: 0 auto;       /* centra el bloque */
-    padding: 2rem;        /* aire interno */
-    line-height: 1.8;     /* más separación entre renglones */
-    font-size: 1.1rem;    /* un poquito más grande la letra */
+    max-width: 840px;
+    /* más angosto para mejorar la lectura */
+    margin: 0 auto;
+    /* centra el bloque */
+    padding: 2rem;
+    /* aire interno */
+    line-height: 1.8;
+    /* más separación entre renglones */
+    font-size: 1.1rem;
+    /* un poquito más grande la letra */
 }
 
 /* Títulos */
 .contenedor h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #000000; /* o el color que uses */
+    color: #000000;
+    /* o el color que uses */
 }
 
 /* Párrafos */
 .contenedor p {
-    margin-bottom: 1.2rem; /* separación entre párrafos */
-    text-align: left;      /* más natural para web */
-    color: #000000;           /* gris clarito en vez de blanco puro */
+    margin-bottom: 1.2rem;
+    /* separación entre párrafos */
+    text-align: left;
+    /* más natural para web */
+    color: #000000;
+    /* gris clarito en vez de blanco puro */
 }
 
 /* Estilo general para todas las imágenes */
 img {
-    border-radius: 10px; /* esquinas suavemente redondeadas */
-    transition: all 0.4s ease; /* animación fluida */
-    max-width: 100%; /* que no se desborde del contenedor */
+    border-radius: 10px;
+    /* esquinas suavemente redondeadas */
+    transition: all 0.4s ease;
+    /* animación fluida */
+    max-width: 100%;
+    /* que no se desborde del contenedor */
     height: auto;
 }
 
 /* Efecto al pasar el mouse */
 img:hover {
-    border-radius: 20px; /* redondea más las esquinas */
-    transform: scale(1.05); /* zoom sutil */
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15); /* sombra elegante */
+    border-radius: 20px;
+    /* redondea más las esquinas */
+    transform: scale(1.05);
+    /* zoom sutil */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+    /* sombra elegante */
 }
-/* Para pantallas menores a 768px (celulares) */
-@media (max-width: 768px) {
-  body {
-    padding: 1rem;
-    margin: 0;
-  }
 
-  h1, h2, h3 {
-    font-size: 1.5rem;
-    line-height: 1.2;
-  }
+/* Botones */
+.btn {
+    padding: 0.7rem;
+    background-color: #111;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+}
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.btn:hover {
+    background-color: #333;
+}
 
-  nav a {
-    margin: 5px 0;
-  }
+.btn_text {
+    background-color: transparent;
+    color: #111;
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px; /* si querés esquinas redondeadas */
-  }
+.btn_text:hover {
+    background-color: #e5e5e5;
 }
