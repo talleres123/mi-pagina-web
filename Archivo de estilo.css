@@ -80,17 +80,11 @@ nav ul li a:hover {
     /* aquí estaba el error */
 }
 
-.hero-texto>.botones {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 /* Contenedor general de todo el contenido */
 
 /* Contenedor de lectura */
 .contenedor {
-    max-width: 840px;
+    max-width: 650px;
     /* más angosto para mejorar la lectura */
     margin: 0 auto;
     /* centra el bloque */
@@ -141,24 +135,55 @@ img:hover {
     /* sombra elegante */
 }
 
-/* Botones */
-.btn {
-    padding: 0.7rem;
-    background-color: #111;
-    border-radius: 12px;
-    color: white;
-    text-decoration: none;
+/* Para pantallas menores a 768px (celulares) */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        /* si querés esquinas redondeadas */
+    }
 }
 
-.btn:hover {
-    background-color: #333;
+img {
+    max-width: 100%;
+    /* Que no supere el ancho de la pantalla */
+    height: auto;
+    /* Mantiene proporciones */
+    display: block;
+    /* Evita que quede flotando raro */
+    margin: 10px auto;
+    /* La centra */
+    border-radius: 10px;
+    /* opcional, esquinas redondeadas */
 }
 
-.btn_text {
-    background-color: transparent;
-    color: #111;
-}
-
-.btn_text:hover {
-    background-color: #e5e5e5;
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    background: #fff;
+    padding: 1.2rem 3rem;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
 }
